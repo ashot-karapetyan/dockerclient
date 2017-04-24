@@ -7,6 +7,9 @@
     <groupId>com.synisys.util</groupId>
     <artifactId>junit-docker-db</artifactId>
     <version>1.0.4</version>
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
 
 
     <build>
@@ -53,27 +56,6 @@
                         </goals>
                     </execution>
                 </executions>
-            </plugin>
-            <plugin>
-                <groupId>com.github.timurstrekalov</groupId>
-                <artifactId>saga-maven-plugin</artifactId>
-                <version>1.5.5</version>
-                <executions>
-                    <execution>
-                        <goals>
-                            <goal>coverage</goal>
-                        </goals>
-                    </execution>
-                </executions>
-                <configuration>
-                    <baseDir>http://localhost:${jasmine.serverPort}</baseDir>
-                    <outputDir>${project.build.directory}/saga-coverage</outputDir>
-                    <noInstrumentPatterns>
-                        <pattern>.*/spec/.*</pattern>
-                        <pattern>.*/classpath/.*</pattern>
-                        <pattern>.*/webjars/.*</pattern>
-                    </noInstrumentPatterns>
-                </configuration>
             </plugin>
         </plugins>
     </build>
