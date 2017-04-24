@@ -1,0 +1,8 @@
+language: java
+env:
+- DOCKER_HOST=unix:///var/run/docker.sock
+
+sudo: required
+
+services:
+  - docker
