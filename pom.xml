@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.synisys.util</groupId>
-    <artifactId>junit-docker-db</artifactId>
+    <artifactId>dockerclient</artifactId>
     <version>1.0.4</version>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -28,7 +28,7 @@
                 <artifactId>coveralls-maven-plugin</artifactId>
                 <version>4.3.0</version>
                 <configuration>
-                    <repoToken>yourcoverallsprojectrepositorytoken</repoToken>
+                    <repoToken>BGJpquEfvIC00LXtCfaqDGpye8nZ7RU7g</repoToken>
                 </configuration>
             </plugin>
 
